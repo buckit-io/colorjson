@@ -5,8 +5,8 @@
 package colorjson
 
 import (
-	"github.com/fatih/color"
 	"github.com/buckit-io/pkg/v3/console"
+	"github.com/fatih/color"
 )
 
 const (

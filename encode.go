@@ -25,8 +25,8 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/mattn/go-isatty"
 	"github.com/buckit-io/pkg/v3/console"
+	"github.com/mattn/go-isatty"
 )
 
 // Marshal returns the JSON encoding of v.
@@ -595,8 +595,8 @@ func (bits floatEncoder) encode(e *encodeState, v reflect.Value, opts encOpts) {
 }
 
 var (
-	float32Encoder = (floatEncoder(32)).encode
-	float64Encoder = (floatEncoder(64)).encode
+	float32Encoder = floatEncoder(32).encode
+	float64Encoder = floatEncoder(64).encode
 )
 
 func stringEncoder(e *encodeState, v reflect.Value, opts encOpts) {
